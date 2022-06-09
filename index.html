@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b4eb97d67c.js" crossorigin="anonymous"></script>
+    <title>translate</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="wrapper">
+                <div class="text-input">
+                    <textarea class="from-text" placeholder="Enter text"></textarea>
+                    <textarea class="to-text" placeholder="Translation" readonly disabled></textarea>
+                </div>
+                <ul class="controls">
+                    <li class="row from">
+                        <div class="icons">
+                            <i class="fas fa-volume-up fromSpeech"></i>
+                            <i class="fas fa-copy copyFrom">
+                                <span class="isCopyFrom">copy</span>
+
+                            </i>
+                        </div>
+                        <select class="from-select">
+                            <option value="en-GB">English</option>
+                            <option value="hi-IN">Hindi</option>
+                            <option value="ne-NP">Nepali</option>
+
+                        </select>
+                    </li>   
+                    <li class="exchange">
+                        <i class="fas fa-exchange-alt"></i>
+                    </li>
+                     <li class="row to">
+                         <select class="to-select">
+                             <option value="hi-IN">Hindi</option>
+                             <option value="ne-NP">Nepali</option>
+                             <option value="en-US">English</option>
+ 
+                         </select>
+                        <div class="icons">
+                            <i class="fas fa-volume-up toSpeech"></i>
+                            <i class="fas fa-copy copyTo">
+                                <span class="isCopyTo">copy</span>
+                            </i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button>Translate Text</button>
+        </div>
+    </main>
+</body>
+
+<script src="./scripts/countries.js"></script>
+<script src="./scripts/scripts.js"></script>
+</html>
